@@ -3,5 +3,24 @@
   <h1>
    Ecommerce : Welcome to {{title}}!!
   </h1>
-  ... Starter Files ...
+  <div class="col-md-12">
+    <h2> User Details</h2>
+    
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+      <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
 </div>
