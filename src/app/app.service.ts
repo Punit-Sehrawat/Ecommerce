@@ -13,7 +13,7 @@ const httpOptions = {
  export class appService {  
 
     constructor(private http:HttpClient) {}
-    private userUrl = 'http://127.0.0.1:8080/demo/all';
+    private userUrl = 'http://127.0.0.1:8282/demo/all';
 
     getUsers(){
         return this.http.get<User[]>(this.userUrl);
